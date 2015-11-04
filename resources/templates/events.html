@@ -7,6 +7,18 @@
 </form>
 
 <br><br>
+
+{{#isAsc}}
+<a href="/?isAsc=false">Show in Descending order</a>
+{{/isAsc}}
+
+
+{{^isAsc}}
+<a href="/?isAsc=true">Show in Ascending order</a>
+{{/isAsc}}
+
+<br><br>
+
 {{#events}}
 {{description}}{{startDate}}<br>
 {{/events}}
